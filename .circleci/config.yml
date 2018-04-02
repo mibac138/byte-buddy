@@ -17,7 +17,7 @@ jobs:
       - image: openjdk:8-jdk
     steps:
       - checkout
-      - run: ./mvnw verify -Pintegration -Pjava8 -Dnet.bytebuddy.test.ci=true -e
+      - run: ./mvnw verify -Pintegration -Pjava8 -Dnet.bytebuddy.test.ci=true -X
   coverage:
     docker:
       - image: openjdk:8-jdk
