@@ -92,7 +92,7 @@
                                 <task>javadocJar</task>
                             </tasks>
                             <args>
-                                <arg>--info</arg>
+                                <arg>--debug</arg>
                             </args>
                             <jvmArgs>
                                 <jvmArg>-Dnet.bytebuddy.test.integration=${bytebuddy.integration}</jvmArg>
