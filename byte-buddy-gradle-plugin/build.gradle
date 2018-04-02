@@ -35,6 +35,7 @@ dependencies {
 }
 
 // Without the extras property, creating a javadoc artifact is not necessary.
+/*
 if (Boolean.getBoolean('net.bytebuddy.misc.extras')) {
     task javadocJar(type: Jar, dependsOn: javadoc) {
         classifier = 'javadoc'
@@ -45,6 +46,7 @@ if (Boolean.getBoolean('net.bytebuddy.misc.extras')) {
         logger.info('javadoc is only generated if net.bytebuddy.misc.extras is set to true')
     }
 }
+*/
 
 test {
     systemProperty('net.bytebuddy.test.version', version)
